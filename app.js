@@ -16,8 +16,7 @@ nameButton.addEventListener('click', () => {
     const userTyped = userNameInput.value;
     userName.textContent = userTyped;
     userNameInput.value = '';
-    nameCounter.textContent = counter ++ + ' times';
-    console.log(counter);
+    nameCounter.textContent = counter++ + ' times';
 })
 
 pronounButton.addEventListener('click', () => {
