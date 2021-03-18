@@ -9,6 +9,7 @@ const pronounButton = document.getElementById('change-pronoun-button');
 const userPronounInput = document.getElementById('change-pronoun-input');
 
 const changeColorButton = document.getElementById('change-color-button');
+const changeFontButton = document.getElementById('change-font-button');
 
 
 nameButton.addEventListener('click', () => {
@@ -32,6 +33,13 @@ changeColorButton.addEventListener('click', () => {
 })
 
 changeColorButton.addEventListener('click', () => {
-    document.getElementById('top-section').style.backgroundColor = "blue";
+    const randomColor = Math.floor(Math.random()*15777215).toString(16);
+    document.getElementById('top-section').style.backgroundColor = "#" + randomColor;
+    document.getElementById('bottom-section').style.backgroundColor = "#" + randomColor;
 })
 
+changeFontButton.addEventListener('click', () => {
+    const newFont = ["Georgia", "Verdana", "Helvetica"];
+    const randomFont = Math.floor(Math.random()*3);
+    document.getElementById('name').style.fontFamily =newFont[randomFont];
+})
