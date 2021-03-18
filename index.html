@@ -13,24 +13,36 @@
     </header> 
     <main>
         <nav class="left-nav">
-            Left
+            <div class="div-spacing">Enter your name</div>
+            <input id="change-name-input"/>
+            <button id ="change-name-button">Submit</button>
+
+            <div class="div-spacing">Enter your pronouns</div>
+            <input id="change-pronoun-input"/>
+            <button id ="change-pronoun-button">Submit</button>
+
+            <div class="div-spacing">Randomly Change Color</div>
+            <button id ="change-color-button">Change it to blue!</button>     
         </nav>
         <content class="middle-content">
             <section class="name-tag-wrapper">
-                <section class="top-section">
+                <section id="top-section">
                     <div class="greeting">
                         <span class ="hello-text">Hello</span></div>
                     <div class="my-name-is">my name is</div>
                 </section>
                 <section class="mid-section">
-                    <div class="name">Casey</div>
+                    <div id="name">Casey</div>
+                    <div id="pronouns">pronouns</div>
                 </section>
                 <section class="bottom-section"></section>
             </section>
         </content>
-        <nav class = "right-nav">
-            Right
+        <div class = "right-nav">
+                <div class="div-spacing">You've changed your name...</div>
+                <div><span id="counter"></span></div>
         </nav>
 </main>
+    <script type="module" src="app.js"></script>
 </body>
 </html>

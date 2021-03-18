@@ -19,19 +19,22 @@ header{
 }
 
 .left-nav{
-    display: grid;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 200px;
 }
 
 .right-nav{
-    display: grid;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 200px;
 }
 
 .middle-content{
     display: grid;
+    height: 100%;
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
@@ -39,6 +42,7 @@ header{
 
 .name-tag-wrapper{
     display: grid;
+    height: 100%;
     justify-content: center;
     align-items: center;
     grid-template-rows: 1fr 1fr 1fr;
@@ -46,12 +50,12 @@ header{
     border-radius: 10px 10px 10px 10px;
 }
 
-.top-section{
+#top-section{
     background-color: red;
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 100%;
+    height: 125px;
     justify-content: center;
     align-items: center;
     border-top-left-radius: 10%;
@@ -62,11 +66,14 @@ header{
 .mid-section{
     background-color: white;
     display: flex;
+    flex-direction: column;
     height: 100%;
     justify-content: center;
     align-items: center;
-    line-height: 100px;
+    line-height: 50px;
     font-weight: bold;
+    padding: 10px;
+    margin: 0;
 }
 
 .bottom-section{
@@ -100,7 +107,7 @@ header{
     align-items: center;
 }
 
-.name{
+#name{
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     text-align: center;
@@ -110,8 +117,67 @@ header{
     align-items: center;
 }
 
+#pronouns{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hello-text{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     font-weight: bold;
+}
+
+#change-name-input{
+    height: 30px;
+    margin: 5px;
+}
+
+#change-pronoun-input{
+    height: 30px;
+    margin: 5px;
+}
+
+#change-name-button{
+    border: none;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+    border-left: none;
+    border-right: none;
+}
+
+#change-pronoun-button{
+    border: none;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+    border-left: none;
+    border-right: none;
+}
+
+#change-color-button{
+    border: none;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+    border-left: none;
+    border-right: none;
+}
+
+.div-spacing{
+    padding: 5px;
 }
